@@ -1,5 +1,5 @@
-require('dotenv').config();
-const Discord = require('discord.js');
+import 'dotenv/config';
+import Discord from 'discord.js';
 
 const client = new Discord.Client();
 
@@ -16,7 +16,8 @@ client.on('message', function(message) {
 
   if (command === 'ping') {
     const timeTaken = Date.now() - message.createdTimestamp;
-    message.reply(`Pong! This message had a ${timeTaken}ms delay.`);
+    message.reply(
+        `Dev sais: I don't like ping!This message had a ${timeTaken}ms delay.`);
   }
 });
 

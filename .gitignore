@@ -1,3 +1,6 @@
+# Compiled
+dist
+
 # Bot token
 config.json
 
